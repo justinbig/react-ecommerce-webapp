@@ -1,0 +1,20 @@
+
+
+.row {
+    max-width: 1440px;
+    margin: 0 auto;
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.col-1-of-2 {
+    width: calc((100% - 30px) /2);
+    float: left;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
